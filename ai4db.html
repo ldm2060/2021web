@@ -90,6 +90,90 @@
                     </div>
                 </div>
             </div>
+            <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">智能数据库监视</h2>
+                    </div>
+
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">数据库运行状况监视</h3>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <img class="article-image" src=" images/2.5.1.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding">
+                            <p>
+                                数据库健康状况监视器（DHM）记录与数据库健康状况 有关的指标! 例如每秒查询数量，查询延迟，以优化数据库或诊断故障。一些人假设具有类似关键性能指标（例如，cpu，usage，mysql，tps）间歇性慢速查询具有相同的根本原因"
+                                因此，他们采用两阶段诊断：离线阶段，从故障记录中提取慢速SQL。将它们与KPI状态聚类。并要求DBA为每个聚类 分配根本原因；联机阶段，对于传入的慢速SQL
+                                他们根据KPI状态的相似性得分将其与群集匹配。如果匹配，他们将使用根本原因通知DBA。否则，他们将生成一个新集群，并要求DBA分配根本原因"。但是，他们无法防止潜在的数据库故障，它高度依赖DBA的经验。但是监视许多数据库指标非常昂贵，因为监视也会消耗资源，为了解决这个问题Taft等人提出了一种弹性数据库系统该系统将数据库监视器与工作负载预测结合在一起。基本思想是主动监视数据库以适应工作负载变化。
+                            </p>
+                        </div>
+                        
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">数据库活动监视器</h3>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <img class="article-image" src=" images/2.5.2.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                    数据库活动监视器在外部监视和控制数据库活动。DAM分为两类，活动选择和活动跟踪。对于活动选择不同级别的数据库活动例如：DBA活动，包括DML，DDL和DCL的用户事务。为了自动选择并记录
+                                    危险活动Hagit等人将数据库监视视为多臂匪徒问题（MAB）。MAB模型是一种决策算法! 通过利用当前策略和探索新策略来选择有风险的数据库活动。目标是训练具有最大风险分数的最优策略"
+                                    因此，对于MAB在每个步骤中，它都会抽样一些风险最高的用户来利用该策略，而某些用户则要探索更好的策略。对于活动跟踪，在确定要监视的活动之后，我们需要跟踪高风险活动并优化数据库性能。
+                            </p>
+                        </div>
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">性能预测</h3>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <img class="article-image" src=" images/2.5.3.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                <h5>传统方法</h5>  
+                                仅捕获逻辑I/O指标（例如页面访问时间），忽略了许多与资源相关的功能。
+                                <h5>Marcus等人</h5>
+                                使用深度学习来预测并发情况下的查询等待时间，包括了子/父操作员之间的交互以及并行计划，但是由于采用流水线结构容易导致信息丢失。
+                                <h5>Zhou等人</h5>
+                                提出一种带有图形嵌入的性能预测方法，使用图模型来表征并发查询，顶点是运算符，边捕获运算符的相关性。使用图卷积网络来嵌入工作负载图，从图中提取与性能相关的特征。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">智能数据库安全</h2>
+                    </div>
+            
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">敏感数据发现</h3>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <img class="article-image" src=" images/2.5.4.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding">
+                            <p>
+                                Bhaskar等人提出的一种通过机器学习来发现敏感数据模式的算法。
+                            </p>
+                        </div>
+            
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">访问控制</h3>  
+                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                Colombo等人提出的一种基于目的的访问控制模型，该模型可定制控制策略来调节数据请求。
+                            </p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <img class="article-image" src=" images/2.5.5.png" border="0" alt="">
+                        </div>
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">SQL注入</h3>
+
+                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                            SQL注入是数据库的常见且有害的漏洞。攻击者可以绕过附加信息或者干扰SQL语句来修改或查看超出其优先级的数据。近年来主要有两种利用机器学习技术的SQl注入检测方法，包括分类树，模糊神经网络。但是该方法需要大量的训练数据，并且不能将知识推广到不同的检测目标。为了解决这一问题，Batista等人提出了一种用于SQL攻击的FNN。基本思想是用模糊规则识别攻击模式，并将这些规则存储在神经网络中。
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <img class="article-image" src=" images/2.5.6.png" border="0" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         <footer class="mdl-mini-footer">
             <div class="mdl-mini-footer__left-section">
                 <div class="mdl-logo">一个介绍数据库与人工智能交叉技术的网站</div>
