@@ -86,6 +86,10 @@
   padding-bottom: 0;
 }
 
+.portfolio-blog-card-full-bg1 {
+  background: url(images/7.png) center / cover;
+}
+
 .portfolio-blog-card-full-bg {
   background: url(images/example-blog03.jpg) center / cover;
 }

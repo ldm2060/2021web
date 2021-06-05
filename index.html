@@ -46,93 +46,147 @@
             </div>
             <main class="mdl-layout__content">
                 <div class="mdl-grid portfolio-max-width">
-                    <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-shadow--4dp">
-                            <h2 class="mdl-card__title-text">基于学习的数据库配置</h2>      
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+                        <div class="mdl-card__media mdl-cell mdl-cell--8-col mdl-cell--12-col-tablet">
+                            <img class="article-image" src=" images/1.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <h1 class="mdl-card__title-text">智能数据库技术</h1>
+                            <p></p>                          
+                        </div>
                     </div>
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Voluptate voluptate</h2>
-                        </div>
                         <div class="mdl-card__media">
-                            <a href="#"> <img class="article-image" src=" images/example-blog02.jpg" border="0" alt=""></a>
-                        </div>
-                        <div class="mdl-card__supporting-text no-bottom-padding">
-                            <span>Posted 2 days ago</span>
-                            <div id="tt2" class=" icon material-icons portfolio-share-btn">share</div>
-                            <div class="mdl-tooltip" for="tt2">
-                                Share via social media
-                            </div>
+                            <a href="#"> <img class="article-image" src=" images/2.png" border="0" alt=""></a>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            <p>Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod
-                                labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in.</p>
+                            <h4>1. 自动调参</h4>
+                            <p>数据库有很多参数，比如MySQL有几百个参数，Oracle有上千个参数。这些参数控制着数据库的方方面面，很大程度的影响了数据库的性能。
+                            基于机器学习的方法，利用已有的数据训练机器学习模型，进而自动化的推荐最优参数。它能很好的帮助DBA进行数据库调优，将DBA从复杂繁琐的调参工作中解放出来。
+                            </p>
+                            <h4>2. 自动推荐和维护索引和视图</h4>
+                            
+                            <p>传统数据库高度依赖DBA来构建和维护索引和视图。由于存在大量的列/表组合，推荐并构建适当的索引/视图非常困难。基于机器学习，能够搜索大量的组合空间，从而找到更优的索引以及视图。
+                            </p>
+                                <h4>3. SQL语句优化</h4>
+                            
+                            <p>通过深度神经网络就可以学习当前的规则并将当前的规则应用到SQL语句中，实现自动化优化数据库操作的目的。
+                            </p>
                         </div>
                     </div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+                        <div class="mdl-card__media">
+                            <a href="#"> <img class="article-image" src=" images/3.png" border="0" alt=""></a>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                           <h4>1. 基数/代价估计</h4>
+                            <p>
+                               数据库优化器依靠代价和基数估计来选择优化的计划，但是传统技术无法有效地捕获不同列/表之间的相关性，因此无法提供高质量的估计。基于深度学习的技术，使得可以通过深度神经网络捕获相关性来估算可以实现更好结果的代价和基数。
+                            </p>
+                            <h4>2. 连接顺序选择</h4>
+                    
+                            <p>一个SQL查询可能有数百万甚至数十亿个可能的计划，有效地找到一个好的方案非常重要。基于机器学习的方法，使得机器可以从比DBA更大搜索空间中自动化的选择最优的方案，以降低成本、提高数据库效率。</p>
+                            <h4>3. 端到端优化</h4>
+                    
+                            <p>完善的优化器不仅要响应代价/基数估计和连接顺序，还需要考虑索引和视图，因此设计端到端优化器很重要。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
+                        <div class="mdl-card__media mdl-cell--6-col">
+                            <a href="#"> <img class="article-image" src=" images/4.png" border="0" alt=""></a>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>传统的数据库由数据库架构师根据他们的经验进行设计，但是数据库架构师只能探索数量有限的可能设计空间。</p>
+                            <h4>1. 学习索引</h4>
+                            利用神经网络构建索引，可以减小索引大小，而且可以提高索引性能。</p>
+                            <h4>2. 学习数据结构设计</h4>
+                            不同的数据结构可能适用于不同的环境，提出了数据结构炼金术，以创建用于不同数据结构的数据推理引擎。</p>
+                            <h4>3. 学习事务管理</h4>
+                            利用AI技术来预测事务并安排事务。从现有的数据模式中学习，有效地预测未来的工作负载趋势并通过平衡冲突率和并发性来有效地计划它们。
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp ">
+                        <div class="mdl-card__media">
+                            <img class="article-image" src=" images/5.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            数据库监视可以捕获数据库运行时指标，例如读/写延迟，CPU/内存使用情况，从而可以在异常发生时提醒管理员。
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp ">
+                        <div class="mdl-card__media">
+                            <img class="article-image" src=" images/6.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            传统的数据库安全性技术依赖于用户定义的规则，但是无法自动检测未知的安全性漏洞。基于AI的算法能够自动快速发现敏感数据，检测异常，进行访问控制，并避免SQL注入。
+                        </div>
+                    </div>
+
                     <div
-                        class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp portfolio-blog-card-full-bg  ">
+                        class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp portfolio-blog-card-full-bg1  ">
                         <div class="mdl-card__title mdl-card--expand "></div>
                         <div class="mdl-card__actions">
-                            <span class="demo-card-image__filename">Pamukkale.jpg</span>
+                            <span class="demo-card-image__filename" style="color:beige">数据库管理系统经过近60年的发展，积累了很多较为成熟的数据查询和管理技术。
+                            四个层次介绍数据管理技术如何支持和优化人工智能技术：</span>
                         </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp ">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">一、 声明性的语言模型</h2>
+                        </div>
                         <div class="mdl-card__media">
-                            <a href="#"> <img class="article-image" src=" images/example-blog04.jpg" border="0" alt=""></a>
+                            <img class="article-image" src=" images/8.png" border="0" alt="">
                         </div>
                         <div class="mdl-card__supporting-text">
-                            <small>Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit.</small>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <p>Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in.
-                                Qui ullamco consectetur aute fugiat officia ullamco proident Lorem ad irure. Sint eu ut consectetur
-                                ut esse veniam.</p>
+                                <p>1. 如何用声明性的SQL语言代替传统AI高级语言，降低AI的使用门槛。</p>
+                                <p>2. 分析如何细化SQL支持AI的粒度。</p>
+                                <p>3. 提高AI的易用性。</p>
                         </div>
                     </div>
-                    <div
-                        class="demo-card-event mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp portfolio-blog-card-event-bg mdl-color-text--white">
-                        <div class="mdl-card__title mdl-card--expand">
-                            <h4 class="mdl-color-text--white">
-                                Conference event:<br>
-                                May 24, 2016<br>
-                                7-11pm
-                            </h4>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp ">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">二、 AI算法优化引擎：</h2>
                         </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
-                                Add to Calendar
-                            </a>
-                            <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons ">event</i>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp">
-                        <div class="mdl-card__title mdl-card--expand portfolio-blog-card-strip-bg mdl-color-text--white">
-                            <h2 class="mdl-card__title-text">adipiscing</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-                                View Updates
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp portfolio-blog-card-compact">
                         <div class="mdl-card__media">
-                            <img class="article-image" src=" images/example-blog07.jpg" border="0" alt="">
-                        </div>
-                        <div class="mdl-card__title ">
-                            <h2 class="mdl-card__title-text">Loren</h2>
+                            <img class="article-image" src=" images/9.png" border="0" alt="">
                         </div>
                         <div class="mdl-card__supporting-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+                            <p>1. 分析如何支持AI算法中不同的算子类型。</p>
+                            <p>2. 分析AI算子的代价估计技术，为AI算法选择提供基础。</p>
+                            <p>3. 分析如何利用AI生成高效的执行逻辑。</p>
+                            <p>4. 利用数据库在管理时间序列数据上的经验，高效的组织历史训练结果。</p>
                         </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-                                View Updates
-                            </a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp ">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">三、 AI异构执行引擎：</h2>
+                        </div>
+                        <div class="mdl-card__media">
+                            <img class="article-image" src=" images/10.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>1. 分析数据管理技术在硬件优化、优化函数优化、执行逻辑优化三个方面的工作。</p>
+                            <p>2. 如何基于分布式加速架构（如Hadoop、Spark等）提升AI性能，提供大规模的并行计算能力。</p>
+                            <p>3. 分别从数据库内核、AI芯片、新型数据库架构三个方面调研AI执行的优化技术。</p>
+
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp ">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">四、 面向AI的数据治理引擎：</h2>
+                        </div>
+                        <div class="mdl-card__media">
+                            <img class="article-image" src=" images/11.png" border="0" alt="">
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>因为AI算法严重依赖于数据，数据库在高效支持AI计算的同时，还需要解决AI数据收集、融合、清洗等多个方面的问题。</p>
+                            <p>1. 真实数据中经常存在大量的错误和不一致性，调研了面向AI的数据发现技术。</p>
+                            <p>2. 繁杂的数据清洗工作需要消耗大量的人力，调研面向AI的数据清洗工作。</p>
+                            <p>3. 多源异构数据的融合开销比较大，调研面向AI的数据融合技术。</p>
                         </div>
                     </div>
                 </div>
